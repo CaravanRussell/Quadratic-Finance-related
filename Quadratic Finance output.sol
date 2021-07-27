@@ -28,6 +28,7 @@ contract QuadraticFinance {
         }
     }
     
+    // output the quadratic funding total amount. For a detailed intro, see https://vitalik.ca/general/2019/12/07/quadratic.html
     function total_contribution() public view returns (uint256) {
         return (sqrt_total) ** 2;
     }
