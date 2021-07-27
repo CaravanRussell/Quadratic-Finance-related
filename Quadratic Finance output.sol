@@ -15,6 +15,8 @@ contract QuadraticFinance {
     fallback() external payable {}
     
     // babylonian method (https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method)
+    // calculating square roots using method from uniswap
+    
      function sqrt_uniswap(uint y) public pure returns (uint z) {
         if (y > 3) {
             z = y;
